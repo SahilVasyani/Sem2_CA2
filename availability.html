@@ -1,0 +1,72 @@
+<html>
+<head>
+<script type="text/javascript" src="imp.js"></script>
+<script src="jquery-3.4.1.js"></script>
+<style>
+body{
+background-image:url("t1.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+height:100vh;
+}
+
+.button {
+  transition-duration: 0.4s;
+  background-color: lightblue;
+}
+
+.button:hover {
+  background-color: #696969; 
+  color: white;
+}
+
+p.a{
+  font: 50px Merriweather, serif;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#yy").click(function(){
+    event.preventDefault();
+    $(".ff").append(" <br><center><mark>Enter the Number(5 digits) and Journey date of the train whose seat availability you want to check with proper source and destination station.</mark><center>");
+	$(this).hide();
+  });
+ });
+</script>
+<title>Ticket Availability </title>
+</head>
+<body>
+<header><nav><hr><center><h3><b onmouseover="style.color='white'" onmouseout="style.color='black'">Rail Reservation</b></h3>
+<a href="homepage.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Home</a> |
+<a href="booking.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Train Booking</a> |
+<a href="route.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Route and Schedule</a> |
+<a href="availability.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Ticket availability</a> |
+<a href="services.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Services</a> | 
+<a href="cancellation.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Ticket Cancellation</a></center><hr></nav></header>
+<center>
+<form>
+<p class="a">CHECK SEAT STATUS</p><br><br>
+<b>Enter Train Number :</b>
+<input type="text" onchange="return(trn())" placeholder="Train Number" id="tno" onfocus="myF()" onblur="myFu()" name="Enter Train Number"><br><br>
+<b>Enter Journey Date :</b>
+<input type="text" onchange="return(jd())" placeholder="dd-mm-yyyy" id="jda" onfocus="myF1()" onblur="myFu1()" name="Enter Journey Date"><br><br>
+<b>Enter Source Station :</b>
+<input type="text" id="ss" placeholder="eg. Mumbai Central" onfocus="myF2()" onblur="myFu2()" name="Enter Source Station"><br><br>
+<b>Enter Destination Station :</b>
+<input type="text" id="ds" onfocus="myF3()" placeholder="eg. Ramnagar" onblur="myFu3()" name="Enter Destination Station"><br><br>
+<b>Select Class :</b>
+<select onchange="whichclass()" id="wc">
+<option value="First AC">First AC</option>
+<option value="Second Ac">Second Ac</option>
+<option value="Third AC">Third AC</option>
+<option value="Sleeper class">Sleeper class</option>
+<option value="AC chair car">AC chair car</option>
+</select><br><br><br>
+<button class="button"><a href="new 2 prototype.html">BOOK TIXXX</a></button>
+</center>
+<p class="ff"><b>Do you need help? </b><button id="yy">CLick Here for help</button></p>
+<hr class="tv"><center><footer onmouseover="style.color='white'" onmouseout="style.color='black'">Copyright © 2019 Reserved for Rail Reservation™ Only</footer></center><hr>
+</form>
+</body>
+</html>

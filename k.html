@@ -1,0 +1,47 @@
+<html>
+<body><marquee0 behavior="alternate">
+<script>
+function bigImg(x) {
+  x.style.height = "200px";
+  x.style.width = "250px";
+}
+
+function normalImg(x) {
+  x.style.height = "150px";
+  x.style.width = "200px";
+}
+</script>
+<script src="jquery-3.4.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("#yy").click(function(){
+    event.preventDefault();
+    $(".ff").append(" <br><center><mark>This project was build by Sahil Vasyani and has the proof as well</mark><br></center>");
+	$(this).hide();
+  });
+ });
+</script>
+<center><h1>Cuisines Available</h1></center>
+<table>
+<tbody>
+<tr>
+<td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="mastkalandar-f.jpg" alt="Cinque Terre" width="250" height="150" /><center>NORTHERN TADKA</center></td>
+<td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="11014_14_site_clear.jpeg" alt="Cinque Terre" width="250" height="150" /><center>DELICIOUS SOUTH</center></td>
+<td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="25691541.jpg" alt="Cinque Terre" width="250" height="150" /><center>SHAHI EAST</center></td>
+<td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="West_Indian_Cuisine_2.jpg" alt="Cinque Terre" width="250" height="150" /><center>WESTERN DAWAT</center></td>
+</tr>
+</tbody>
+</table>
+<center><h1>Hotels Available</h1></center>
+<table>
+<tbody>
+<tr>
+<td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="ECONOMY.jpg" alt="Cinque Terre" width="250" height="150" /><center>ECONOMY CLASS</center></td>
+<td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="Premium_Room.jpg" alt="Cinque Terre" width="250" height="150" /><center>PREMIUM CLASS</center></td>
+<td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="LUXURY.jpg" alt="Cinque Terre" width="250" height="150" /><center>LUXURY CLASS</center></td>
+</tr>
+</tbody>
+</table>
+<p class="ff"><b>Frequently Asked Questions </b><button id="yy">Click to view FAQ</button></p>
+</body></marquee>
+</html>

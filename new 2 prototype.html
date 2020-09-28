@@ -1,0 +1,80 @@
+<head>
+<style>
+table, th, td {
+  border: 5px solid Black;
+  border-collapse: collapse;
+}
+</style>
+<style>
+body{
+background-image:url("https://www.webetutorial.com/wp-content/uploads/2017/11/payment-gateway-process.gif");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+height:50vh;
+}
+p.a{
+  font: 20px Algerian, sans-serif;
+}
+</style>
+</head>
+<body>
+<center>
+<a href="homepage.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Home</a> |
+<a href="booking.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Train Booking</a> |
+<a href="route.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Route and Schedule</a> |
+<a href="availability.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Ticket availability</a> |
+<a href="services.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Services</a> | 
+<a href="cancellation.html" onmouseover="style.color='yellow'" onmouseout="style.color='blue'">Ticket Cancellation</a></center><hr></nav></header>
+</center>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("This field cannot be empty");
+    return false;
+  }
+}
+function myF() {
+	  document.getElementById("fname").style.backgroundColor = "lightblue";
+}
+</script>
+<br><br><br><br><br>
+<center>
+  <table cellpadding="25px" > 
+  <form name="myForm" onsubmit="return validateForm()">
+          <tr>
+          <th colspan=2 style="background-color:RoyalBlue"><center><h2 style="color:White;">PAYMENT INFORMATION</h2></center></th>
+          </tr> 
+          <tr>
+		  <td><input type="text" onfocus="myF()" onblur="validateForm()" name="fname" placeholder="First Name" required"/></td>
+          <td><input type="text" onblur="validateForm()" name="fname" placeholder="Surname"/></td>
+		  </tr>
+          <tr>
+		  <td colspan=2><input type="text" onblur="validateForm()" name="fname" placeholder="Card Number"></td>
+          </tr>
+		  <tr>
+		  <td><input type="text"  onblur="validateForm()" name="fname" placeholder="MM / YY"/></td>
+          <td><input type="text"  onblur="validateForm()" name="fname" placeholder="CCV"/></td>
+         </tr>
+        
+      
+          <tr>
+		  <td colspan=2><input type="text" onblur="validateForm()" name="fname" maxlength="145" placeholder="Street Address"/></td>
+          </tr>
+		  <tr>
+		  <td><input type="text" maxlength="20" onblur="validateForm()" name="fname" placeholder="City"/></td>
+          <td><input type="text" onblur="validateForm()" name="fname" pattern="[0-9]*" maxlength="6" placeholder="ZIP code"/></td>
+          </tr>
+		  <tr>
+		  <td colspan=2><input id="input-field" type="email" onblur="validateForm()" name="fname" autocomplete="on" maxlength="40" placeholder="Email"/></td>
+          </tr>
+		  <tr>
+		  <td colspan=2 style="background-color:RoyalBlue"><center><a href="1.html"><input id="input-button" type="submit" value="Submit"/></a></center>
+        </tr>
+    </form>
+	
+	</table>
+	</center>
+	</body>
+	
